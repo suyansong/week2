@@ -1,33 +1,26 @@
 
-c=open('D://aa.jpg','rb+')
-b=c.read()
-d=open('D://cc.jpg','wb+')
-d.write(b)
-
-
-import re
-
-a=re.compile("\w+@\w+\.+com")
-b=input("请输入您的邮箱:")
-pl=re.search(a,b)
-if pl:
-    print("邮箱验证通过")
-else:
-    print("邮箱验证失败")
+def shuru(s):
+    with open("abc.txt","a") as f:
+        f.write(s)
+while 1:
+    s = input("请输入要录入的语句:")
+    if s != "exit":
+        shuru(s)
+    else:
+        break
 
 
 
 
-
-
-
-
-
-
-
-
-
-
+f=open('d://ff.txt','a')
+while 1:
+    print('请输入信息')
+    x = input()
+    if x=='exit':
+        break
+    else:
+        f.write(x)
+f.close()    这个是追加的
 
 
 
